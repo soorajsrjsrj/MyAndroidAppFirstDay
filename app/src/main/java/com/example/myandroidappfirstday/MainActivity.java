@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
            public void onClick(View v) {
                String email = edtUserEmail.getText().toString();
                String paswrd = edtPassword.getText().toString();
-           
+
                Toast.makeText(MainActivity.this, "Email :- "+email, Toast.LENGTH_SHORT).show();
            }
        });
