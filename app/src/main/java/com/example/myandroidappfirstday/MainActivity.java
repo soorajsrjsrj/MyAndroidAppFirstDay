@@ -35,8 +35,15 @@ public class MainActivity extends AppCompatActivity {
            public void onClick(View v) {
                String email = edtUserEmail.getText().toString();
                String paswrd = edtPassword.getText().toString();
+               if (email=="jubin"&&paswrd=="jubin") {
+                   txtMsg.setText("Login Success!!");
+                   Toast.makeText(MainActivity.this, "Login Sucess!!", Toast.LENGTH_SHORT).show();
+               }
+               else{
+                   txtMsg.setText("Login Failed");
+                   Toast.makeText(MainActivity.this, "Unauthorised Login!!!", Toast.LENGTH_SHORT).show();
 
-               Toast.makeText(MainActivity.this, "Email :- "+email, Toast.LENGTH_SHORT).show();
+               }
            }
        });
 
